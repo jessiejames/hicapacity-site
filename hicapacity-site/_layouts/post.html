@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post">
+  <div class="postTitle">
+    <a href="{{ post.url }}">{{ page.title }}</a>
+  </div>
+  <div class="postInfo">
+    {{ page.date | date: "%B %e, %Y" }} by {{ page.author }}
+  </div>
+  <div class="postContent">
+    {{ content }}
+  </div>
+  <div>
+    <span class="postInfo">Posted in: </span>
+    {% for category in page.categories %}
+      <div class="category">{{ category }}</div>
+    {% endfor %}  
+  </div>
+</div>
+

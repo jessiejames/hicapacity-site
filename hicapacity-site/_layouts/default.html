@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ page.title }}</title>
+
+<meta charset="UTF-8">
+
+<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- OpenGraph tag stuff -->
+{% if page.type == "main" or page.type == "calendar" %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="HICapacity" />
+<meta property="og:image" content="http://hicapacity.org/img/hicap_logo_vectorized_no_bg.png" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:url" content="http://hicapacity.org{{ page.url }}">
+{% else %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="HICapacity" />
+
+{% if page.image == undefined %}
+<meta property="og:image" content="http://hicapacity.org/img/hicap_logo_vectorized_no_bg.png" />
+{% else %}
+<meta property="og:image" content="http://{{ page.image | image_url }}" />
+{% endif %}
+
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:url" content="http://hicapacity.org{{ page.url }}">
+{% endif %}
+
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/socicon.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/events.css">
+<link rel="stylesheet" href="/css/menu.css">
+{% if page.type == "calendar" %}
+<link rel="stylesheet" href="/css/fullcalendar.min.css">
+{% endif %}
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/menu_jquery.js"></script>
+<script src="/js/dateFormat.min.js"></script>
+<script src="/js/events.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // load sidebar contents
+    populateEvents();
+    
+    // Set the active page on the navigation page
+    var path = location.pathname.substring(1); // strip the slash in the beginning
+    path = path.replace(/\/$/, ""); // strip the trailing slash if it exists
+  
+    if ( path ) {
+      $('.nav a[href$="' + path + '"]').parent().addClass('active');
+    }
+    else {
+      $('#home').addClass('active');
+    }
+  });
+</script>
+
+</head>
+<body>
+  {% include header.html %}
+  {% include navbar.html %}
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 main">
+        {{ content }}
+      </div>
+      <div class="col-sm-3 sidebar">
+        {% include sidebar.html %}        
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    &copy HICapacity LLC 2014</script>
+  </div>
+  {% include analytics.html %}  
+</body>
+</html>

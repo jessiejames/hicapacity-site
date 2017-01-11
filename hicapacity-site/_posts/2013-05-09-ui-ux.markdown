@@ -1,0 +1,38 @@
+--- 
+layout: post
+title: Industry Practices on UI + UX
+date: 2013-05-09 22:40:00 -10:00
+author: Kathryne Sakata and Tiffany Higa 
+categories: ['Event']
+image: i.imgur.com/ZgnXSDY.jpg
+description: This talk is to inform others of the necessary steps in creating a website and understanding the importance of UI (User Interface) + UX (User Experience) design. These steps may seem tedious, but as you dive into the design or even the development stage, you'll quickly find out that this process will help to diminish problems that could occur down the road.
+tags: [user experience, user interaction]
+---
+<div style="text-align: center" >
+<a href="http://imgur.com/ZgnXSDY"><img src="http://i.imgur.com/ZgnXSDY.jpg" width="450" alt="" title="Hosted by imgur.com" /></a>
+</div>
+#### This talk is to inform others of the necessary steps in creating a website and understanding the importance of UI (User Interface) + UX (User Experience) design. These steps may seem tedious, but as you dive into the design or even the development stage, you'll quickly find out that this process will help to diminish problems that could occur down the road. ####
+
+<br />
+__When:__ Wed, May 29, 2013 @7pm to 8pm (DATE CORRECTED)
+
+__Where:__ HI Capacity (in the Box Jelly), 307a Kamani Street Honolulu, 96813. (Please park on Ward Ave, Kamani street, or surrounding street parking).
+
+Register for this event now at : [http://hicap-uiux.eventbrite.com](http://hicap-uiux.eventbrite.com)
+
+<br />
+---
+<div style="float: left; margin-right: 15px">
+<a href="http://imgur.com/ezYK0Sg"><img src="http://i.imgur.com/ezYK0Sg.jpg" width="75" alt="" title="Hosted by imgur.com" /></a>
+</div>
+#### Kathryne Sakata ####
+Kat received her graphic design degree from the New Media Arts Interface Design Program at Kapiolani Community College. She is currently a Graphic Designer and Web Developer at Design Asylum, Inc. and the Lead UI Designer at Undefeated Games, Inc. Kat enjoys engaging with new people and sharing her enthusiasm for design. She is an active member of AIGA Honolulu, HI-Capacity and Alakai Young Professionals and participates in various events including Startup Weekend, HNL New Tech Meetup, and WetWare Weds.
+
+
+<div style="float: left; margin-right: 15px">
+<a href="http://imgur.com/Vgi2c5w"><img src="http://i.imgur.com/Vgi2c5w.jpg" width="75" alt="" title="Hosted by imgur.com" /></a>
+</div>
+#### Tiffany Higa ####
+Tiff's ackground includes marketing and design, with degrees from UH Manoa and Kapi‘olani Community College. She recently began working at Anthology Marketing Group as an Associate UX Designer. Outside of work, Tiffany enjoys being a member of various organizations such as AIGA Honolulu, HI Capacity, and Alaka‘i Young Professionals. She also enjoys activities such as DIY projects, hiking, and looking at penguins.
+
+<br style="clear:both" />
